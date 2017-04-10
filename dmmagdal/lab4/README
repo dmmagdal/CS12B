@@ -1,0 +1,8 @@
+Diego Magdaleno
+dmmagdal
+
+Makefile	makes charType into executable
+alphaNum	counts number of alphanumeric characters
+cArrays		makes an array of characters
+charType 	counts number of alphabetic, numeric, punctuation, and whitespace 
+		characters line by line
