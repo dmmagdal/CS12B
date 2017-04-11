@@ -1,53 +1,18 @@
-// AddLists
+// AddLists2
 // Takes 2 linked list and adds the values of their respective nodes
 
 import java.util.*;
 import java.io.*;
 
-class AddLists{
-	private static Scanner in;
-	private static PrintWriter out;
-	private static int numItems;
-	private static Node head;
+class AddLists2{
+	public static Scanner in;
+	public static PrintWriter out;
 
-	public AddLists(){
-		head = new Node();
-		numItems = 0;
-	}
-
-	public void insert(int val){
-		Node N = new Node(val);
-		if (head.val == -1 && head.next == null){
-			head = N;
-		}
-		else {
-			Node X = head;
-			while (X != null){
-				X = X.next;
-			}
-			X = N;
-		}
-		numItems++;
-	}
-
-	public void printList(){
-		Node N = head;
-		while (N != null){
-			if (N.next == null){
-				out.print(N.val+" ");
-			}
-			else{
-				out.print(N.val+"-> ");
-			}
-			N = N.next;
-		}
-	}
-
-	public AddLists add(AddLists l1, AddLists l2){
+	public static Lists add(Lists l1, Lists l2){
 		Node N, P;
 		N = l1.head;
 		P = l2.head;
-		AddLists sumlist = new AddLists();
+		Lists sumlist = new Lists();
 		if (l1.numItems > l2.numItems){
 			while (P != null){
 				sumlist.insert(P.val+N.val);
@@ -87,9 +52,9 @@ class AddLists{
 
 		while (in.hasNextLine()){
 			String[] input = in.nextLine().split(" ");
-			AddLists sum = new AddLists();
-			AddLists list1 = new AddLists();
-			AddLists list2 = new AddLists();
+			Lists sum = new Lists();
+			Lists list1 = new Lists();
+			Lists list2 = new Lists();
 			if (lineNum%2 == 0){
 				for (int i = 0; i < input.length; i++){
 					list1.insert(Integer.parseInt(input[i]));
@@ -99,15 +64,55 @@ class AddLists{
 				for (int j = 0; j < input.length; j++){
 					list2.insert(Integer.parseInt(input[j]));
 				}
+				sum = add(list1, list2);
+				sum.printList();
+				out.print("\n");
 			}
-			sum = sum.add(list1, list2);
-			sum.printList();
-			out.print("\n");
 			lineNum++;
 		}
 		in.close();
 		out.close();
 	}
+}
+
+
+class Lists{
+
+	public static int numItems;
+	public static Node head;
+
+	public Lists(){
+		head = new Node();
+		numItems = 0;
+	}
+
+	public void insert(int val){
+		Node N = new Node(val);
+		if (head.val == -1 && head.next == null){
+			head = N;
+		}
+		else {
+			Node X = head;
+			while (X != null){
+				X = X.next;
+			}
+			X = N;
+		}
+		numItems++;
+	}
+
+	public void printList(){
+		Node N = head;
+		while (N != null){
+			if (N.next == null){
+				AddLists2.out.print(N.val+" ");
+			}
+			else{
+				AddLists2.out.print(N.val+"-> ");
+			}
+			N = N.next;
+		}
+	}	
 }
 
 class Node{
