@@ -171,7 +171,7 @@ class Bard{
 		
 		// read querry from input.txt 
 		while (in.hasNextLine()){
-			String[] input = in.nextLine().split("\\W+");
+			String[] input = in.nextLine().split("[^'a-zA-Z0-9_-]+"); //replace string regex with "[^'a-zA-Z0-9_-]+"
 			int k = input.length;
 			if (k < 2){
 				// if the querry is a word
