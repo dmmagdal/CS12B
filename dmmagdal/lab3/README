@@ -1,9 +1,0 @@
-Diego Magdaleno
-dmmagdal
-
-
-CommandLineArguments.c	read command line arguments in c
-FileIO.c		read from file in c
-FileReverse.c		print string from file in reverse in c
-StandardInput.c		read integers and prints it out in c
-hello.c			hello world in c

@@ -1,6 +1,0 @@
-buriest 
-coude
-chained
-20 2
-3 1
-8 4

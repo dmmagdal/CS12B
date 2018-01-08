@@ -1,4 +1,0 @@
-Grade: 0/20
-Notes: jar doesn't run, input output format wrong, invalid output
-
-Late by 40 hours

@@ -1,6 +1,0 @@
-Pa5 Hash ado about nothing
-
-Bard.java	Stores Bard by Shakespeare to hash table. On Word query, the value of the hash table is retrived and printed. On number query, retrieve and store key value pairs of the certain query length to linked list. Then returns the number queried words.   
-
-Diego Magdaleno		Thooba Samini
-dmmagdal		tsamini

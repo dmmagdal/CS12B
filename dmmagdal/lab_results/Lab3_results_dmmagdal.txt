@@ -1,3 +1,0 @@
-Grade: 9/10
-Explanation:
-Missing file (-1): standardInput.c

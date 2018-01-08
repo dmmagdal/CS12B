@@ -1,4 +1,0 @@
-Grade: 0/20
-Notes: missing piece classes (eg Queen) so doesn't compiile
-
-Late by 0.0 hours

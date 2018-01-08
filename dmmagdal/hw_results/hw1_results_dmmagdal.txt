@@ -1,3 +1,0 @@
-Grade: 0.0/20
-Notes: misnamed folder, misnamed output file,timed out, if you find a small error that caused this you can receive partial credit
-late by 0 hours
