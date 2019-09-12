@@ -1,0 +1,12 @@
+Lab5
+
+Diego Magdaleno
+dmmagdal
+
+Dictionary.h		Dictionary header file
+Dictionary.c		Dictionary C file
+DictionaryClient.c	Client that creates and manipulates the Dictionary ADT
+IntegerLinkedList.h	IntegerLinkedList header file that shows what functions will be used
+IntegerLinkedList.c	IntegerLinkedList file that codes all the functions from the header
+
+I've had some weird errors happen. Git gives me a runtime error but unix timeshare gies me a compile error. So yeah. It'd be helpful if you didnt just tell people to google it because google is not very simple in it s explaination. With a little more time and someone who would actually look at the code, I could find the bug.

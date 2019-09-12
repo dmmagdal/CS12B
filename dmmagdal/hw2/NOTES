@@ -1,0 +1,4 @@
+1. Change the null in the pieces to "-"
+2. Change return type for pieces
+3. Change methods in ChessBoardInterface to match those in ChessBoard
+4. General Debugging

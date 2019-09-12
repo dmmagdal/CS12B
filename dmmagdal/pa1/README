@@ -1,0 +1,8 @@
+NQueens.java
+
+Diego Magdaleno
+dmmagdal
+
+Note: There are some issues with Array indexing and variables. I did have to shift them
+a bit to avoid those errors. I would have devised a better system but I was short on 
+time. I apologise if it seems convoluted in code.
